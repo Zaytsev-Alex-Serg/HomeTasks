@@ -9,7 +9,11 @@ int GetSum(int a, int b)
     return sum;
 }
 
+void PrintMessageToConsole(string message)
+{
+    Console.WriteLine(message);
+} 
 
-//
+// ------------------------------------------------------------
 int mySum = GetSum(10, 15);
-Console.WriteLine(mySum);
+PrintMessageToConsole(mySum.ToString());
