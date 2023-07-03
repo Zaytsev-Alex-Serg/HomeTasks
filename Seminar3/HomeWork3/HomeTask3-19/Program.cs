@@ -47,6 +47,12 @@ void CheckPali (int num, int numRev)
 }
 
 int num = Promt("Введите пятизначное число: ");
+if (num < 0)
+{
+    Console.Write("Отрицательное число не может быть палиндромом");
+    System.Environment.Exit(int.Parse(Console.ReadLine()));
+
+}
 CheckNum(num);
 int numRev = Reverse(num);
 CheckPali(num, numRev);
