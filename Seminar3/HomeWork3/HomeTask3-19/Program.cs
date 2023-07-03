@@ -8,18 +8,16 @@ int Promt (string message)
     return result;
 }
 
-/*void CheckNum (int num)
+void CheckNum (int num)
 {
-    for (int i = 0; i < 5; i++)
-    {
-        num = num/10;
-    }
+        num = num/100000;
+    
     if (num != 0)
     {
         Console.Write("Вы ввели не пятизначное число");
+        System.Environment.Exit(int.Parse(Console.ReadLine()));
     }
-
-}*/
+}
 
 int Reverse (int a)
 {
@@ -36,34 +34,8 @@ int Reverse (int a)
     return k;
 }
 
-/*bool CheckPali (int num, int numRev)
+void CheckPali (int num, int numRev)
 {
-    if (num == numRev)
-    {
-        return true;
-    }
-    if (num != numRev)
-    {
-        return false;
-    }
-}*/
-
-int num = Promt("Введите пятизначное число: ");
-//CheckNum(a);
-int numRev = Reverse(num);
-int numCheck = num;
-for (int i = 0; i < 5; i++)
-    {
-        numCheck = numCheck/10;
-    }
-    if (numCheck != 0)
-    {
-        Console.Write("Вы ввели не пятизначное число");
-    }
-    if (numCheck == 0)
-    {
-        Reverse(num);
-    }
     if (num == numRev)
     {
         Console.Write($"Число {num} палиндром");
@@ -72,4 +44,10 @@ for (int i = 0; i < 5; i++)
     {
         Console.Write($"Число {num} НЕ палиндром");
     }
+}
+
+int num = Promt("Введите пятизначное число: ");
+CheckNum(num);
+int numRev = Reverse(num);
+CheckPali(num, numRev);
 
