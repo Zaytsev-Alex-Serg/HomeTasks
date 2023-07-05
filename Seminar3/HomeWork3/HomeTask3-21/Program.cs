@@ -14,11 +14,6 @@ void GetDistance (int x1, int y1, int z1, int x2, int y2, int z2)
     Console.Write($"Расстояние между точками равняется: {result}");
 }
 
-
-
-
-
-
 int x1 = Promt("Введите координату x1 для первой точки: ");
 int y1 = Promt("Введите координату y1 для первой точки: ");
 int z1 = Promt("Введите координату z1 для второй точки: ");
