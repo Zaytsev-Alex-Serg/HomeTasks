@@ -6,7 +6,7 @@ int count = 10;
 int[,,] array = new int[2, 2, 2];
 
 // Получение размерности массива
-int arrayRowLength = array.GetLength(0);
+int arrayRowLength = array.GetLength(0); 
 int arrayColumnLength = array.GetLength(1);
 int arrayElementLength = array.GetLength(2);
 
